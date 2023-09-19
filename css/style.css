@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #C04C00;
+    --gray-900: #333;
+    --white: #ffffff;
+    --gray-200: #777777;
+    --gray-100: #818a91;
+    --black: #111111;
+    --orange: #DD5903;
+}
+.xs-1, .xs-2, .xs-3, .xs-4, .xs-5, .xs-6, .xs-7,.xs-8, .xs-9, .xs-10,.xs-11,.xs-12, .sm-1,.sm-2,.sm-3,.sm-4,.sm-5,.sm-6,.sm-7,.sm-8,.sm-9,.sm-10,.sm-11,.sm-12, .md-1,.md-2,.md-3,.md-4,.md-5,.md-6,.md-7,.md-8,.md-9,.md-10,.md-11,.md-12, .lg-1,.lg-2,.lg-3,.lg-4,.lg-5,.lg-6,.lg-7,.lg-8,.lg-9,.lg-10,.lg-11,.lg-12, .xl-1,.xl-2,.xl-3,.xl-4,.xl-5,.xl-6,.xl-7,.xl-8,.xl-9,.xl-10,.xl-11,.xl-12{
+    padding: 12px;
+}
+.xs-1{
+    width: 8.3333%;
+}
+.xs-2{
+    width:16.6666;
+}
+.xs-3{
+    width: 25%;
+}
+.xs-4{
+    width: 33.3333%;
+}
+.xs-5{
+    width: 41.6666%;
+}
+.xs-6{
+    width: 50%;
+}
+.xs-7{
+    width: 58.3333%;
+}
+.xs-8{
+    width: 66.6666%;
+}
+.xs-9{
+    width: 75%;
+}
+.xs-10{
+    width: 80.3333%;
+}
+.xs-11{
+    width: 91.6666%;
+}
+.xs-12{
+    width: 100%;
+}
+.xs-none{
+    display: none;
+}
+
+.xl-none{}
+.xl-block{}
+.lg-none{}
+.lg-block{}
+.md-none{}
+.md-block{}
+.sm-none{}
+.sm-block{}
+.xs-none{}
+.xs-block{}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.text-center{
+    text-align: center;
+}
+.d-block{
+    display: block;
+}
+.image{
+    width: 100%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ul,li,a{
+    list-style: none;
+    text-decoration: none;
+}
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+.w-50{
+    /* width: 50%; */
+}
+.w-25{
+    /* width: 25%; */
+}
+.w-33{
+    /* width: 33.3333%; */
+}
+.w-20{
+    /* width: 16%; */
+}
+.margin-tb{
+    margin: 80px 0;
+}
+
+.line{
+    color: var(--white);
+    background-color: #1e1f1f;
+    border-radius: 4px;
+    z-index: 9999;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    display: none;
+    z-index: 9999;
+}
+.top a{
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* header */
+header{
+    background-color: var(--background-color);
+}
+header .menu ul li a{
+    color: var(--white);
+    font-size: 19px;
+    font-weight: 900;
+}
+header .menu ul li a:hover{
+    color: black;transition: all 0.5s;
+}
+header .menu ul li{
+    margin: 0 15px;
+}
+header .icon{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 23px;
+}
+header .icon h5{
+    color: var(--gray-100);
+}
+    /* Dropdown menu styles */
+ul.dropdown-menu {
+    display: none;
+    position: absolute;
+    bottom: 57%;
+    /* top: -98%;   */
+    /* left: 0; */
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+
+ul.dropdown-menu li {
+    list-style: none;
+    padding: 10px; z-index: 9999;
+}
+
+ul.dropdown-menu li a {
+    color: #000000;
+    text-decoration: none; z-index: 9999;
+}
+
+/* Show dropdown on hover or focus */
+li.dropdown:hover ul.dropdown-menu {
+    display: block;
+}
+
+
+/* banner */
+.banner{
+    background-image: url(../img/dineos-restaurant-slider-image-1.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 190px 0;
+}
+.banner-content {
+    color: var(--white);
+}
+.btn,.btn1{
+    padding: 10px 20px;
+    background-color: var(--orange);
+    color: var(--white);
+    margin-left: 10px;
+    transition: all 0.5s;
+    border:2px solid var(--background-color);
+}
+.btn:hover{
+    background-color:transparent;
+}
+.btn1{
+    background-color: transparent;
+    opacity: 0.9;
+}
+.btn1:hover{
+    background-color: var(--orange);
+}
+.banner-content h2{
+    margin: 10px 0 30px 0;
+    font-size: 44px;
+}
+.banner-content h6{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.banner-content h2{
+    font-size: 30px;
+}
+
+/* luxury */
+.luxury{
+    padding: 10px;
+}
+.luxury .w-50 button{
+    color: var(--black);
+    font-weight: 700;
+}
+.luxury-content img{
+    margin: 20px 0 30px 0;
+}
+.luxury-content h2{
+    font-size: 45px;
+}
+.luxury-content p{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.luxury-img{
+    display: none;
+}
+/* marquee */
+marquee{
+    margin-top: 80px;
+    
+}
+marquee h2{
+    font-size: 130px;
+    text-align: center;
+    background-image: url('../img/gradiant.jpg');
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: cover;
+    color: transparent;
+}
+
+/* title */
+.title{
+    margin: 40px 0;
+}
+.title h3{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 18px;
+}
+
+/* service */
+.service{
+    /* background-color: var(--gray-100); */
+    padding: 20px;
+}
+.service button{
+    color: var(--black);
+    font-weight: 700;
+    border: 1px solid var(--background-color);
+
+}
+.service .w-25{
+    /* background-color: gray; */
+}
+.service-img{
+    margin-top: 20px;
+}
+.service-img div{
+    overflow: hidden;
+}
+.service-img div:hover{
+    transform: scale(1.1);
+   transition:  all cubic-bezier(0.39, 0.58, 0.57, 1) 0.3s;
+}
+.service-img i{
+    margin-top: 10px;
+    color: var(--orange);
+}
+.service-img h3{
+    color: var(--gray-900);
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.service-img h4{
+    color: var(--orange);
+    font-weight: 100;
+}
+
+/* Lounge */
+.Lounge h2{
+    font-size: 50px;
+} 
+.Lounge ul li{
+    font-size: 20px;
+    font-weight: 100;
+    color: var(--background-color);
+    margin: 20px 0;
+}
+.Lounge ul li:first-child,.Lounge ul li:nth-child(2){
+    color: var(--gray-200);
+}
+.Lounge i{
+    color: var(--gray-200);
+    margin: 0 15px;
+}
+.Lounge i:hover{
+    color: var(--background-color);
+}
+
+/* counter */
+.counter span{
+    font-size: 90px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #505050;
+    border: #505050;
+    color: #FFFFFF;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 80px;
+    padding: 4px 0px 16px 0px;
+}
+.counter span:hover{
+    border: var(--background-color);
+    -webkit-text-stroke-color: var(--background-color);
+    color: var(--background-color);
+}
+.counter h4{
+    color: var(--gray-900);
+    font-size: 20px;
+    font-weight: 100;
+    font-weight: 900;
+}
+.counter h4:hover{
+    color: var(--background-color);
+}
+
+/* populate */
+.populate .w-25{
+    overflow: hidden;
+    padding: 0;
+}
+.populate img:hover{
+    transform: scale(1.1); 
+    transition: all 1s;
+    /* transition:all cubic-bezier(0.39, 0.58, 0.57, 1) 0.3s; */
+}
+/* food */
+.food{
+    margin-bottom: 70px;
+}
+.food .w-33 div{
+    overflow: hidden;
+}
+.food .w-33 img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.food h4{
+    color: var(--background-color);
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.food p{
+    color: var(--gray-900);
+    font-size: 18px;
+    transition: all 0.5s;
+    font-weight: 900;
+}
+.food p:hover{
+    color: var(--background-color);
+}
+
+/* advertise */
+.advertise{
+    padding: 30px 0;
+    background-color: #eeeeee;
+}
+
+.advertise .container {
+    text-align: center;
+}
+
+.advertise img {
+    display: inline-block; 
+    max-width: 100%;
+    height: auto; 
+}
+
+/* footer */
+footer{
+    background-color: var(--black);
+    color: var(--gray-100);
+    padding: 20px;
+    border-top: 4px solid var(--background-color);
+}
+footer p{
+    margin: 20px 0;
+}
+footer span{
+    color: var(--background-color);
+}
+footer ul li a{
+    color: var(--gray-100);
+   margin-left: 7px;
+}
+footer ul li{
+    margin: 20px 0;
+}
+
+footer ul a{
+    color: var(--gray-100);
+    margin: 0 10px;
+}
